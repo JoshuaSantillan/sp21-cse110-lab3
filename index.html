@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="/style/style.css"
+        rel="stylesheet">
   <meta charset="utf-8">
   <meta content="IE=edge"
         http-equiv="X-UA-Compatible">
@@ -14,19 +16,29 @@
 </head>
 <body>
   <header>
-    <h1><i><u>Joshua</u><br>
-    &emsp;<u>Santillan</u></i></h1>
-    <nav>
-      <a href="https://github.com/JoshuaSantillan"
-           target="_blank">Github</a> | <a href="https://www.linkedin.com/in/joshuasantillan/"
-           target="_blank">Linkedin</a> | <a href="https://na.op.gg/summoner/userName=xreff"
-           target="_blank">League Game History</a>
-    </nav><audio controls=""><source src="audio/MissFortune_Select.ogg"
+    <span id="name"></span>
+    <h1><span id="name"><i><u>Joshua Santillan</u></i></span></h1>
+    <div class="flex-container">
+      <nav class="myNav">
+        <div>
+          <a href="https://github.com/JoshuaSantillan"
+               target="_blank">Github</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/joshuasantillan/"
+               target="_blank">Linkedin</a>
+        </div>
+        <div>
+          <a href="https://na.op.gg/summoner/userName=xreff"
+               target="_blank">League Game History</a>
+        </div>
+      </nav>
+    </div><audio controls=""><source src="audio/MissFortune_Select.ogg"
             type="audio/ogg"> Sorry<br>
     Your browser doesn't support audio</audio>
   </header>
   <main>
-    <h1><b>Journal Entries:</b></h1>
+    <h1 id="journalHeader"><b>Journal Entries:</b></h1>
     <hr>
     <section>
       <div>
@@ -44,7 +56,7 @@
             <p><span>Talked with a few of my group members already</span></p>
           </li>
         </ul>
-        <h3><span>&emsp;<em>TODO:</em></span></h3>
+        <h4><span>&emsp;<em>TODO:</em></span></h4>
         <ol>
           <li>
             <p><span>Need to start my CSE110 Lab..</span></p>
@@ -80,7 +92,7 @@
             <p>Felt good after taking CSE 101 Quiz</p>
           </li>
         </ul>
-        <h3>&emsp;<em>TODO:</em></h3>
+        <h4>&emsp;<em>TODO:</em></h4>
         <ol>
           <li>
             <p>Still need to start CSE 110 lab..due tomorrow</p>
@@ -118,7 +130,7 @@
             <p>Updated my resume</p>
           </li>
         </ul>
-        <h3>&emsp;<em>TODO:</em></h3>
+        <h4>&emsp;<em>TODO:</em></h4>
         <ol>
           <li>
             <p>Finish this lab on time</p>

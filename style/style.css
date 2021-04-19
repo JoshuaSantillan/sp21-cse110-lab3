@@ -1,1 +1,75 @@
+/* change entire background to light grey */
+*{
+    background-color: rgb(220,220,220);
+}
 
+/*header allignment */
+header{
+    text-align: center;
+    color: #6699cc;
+    display: block;
+}
+
+/* name ID font change */
+#name{
+    font-size: 1.5em;
+}
+
+#journalHeader{
+    font-size: 5.5ex;
+    height: 22px;
+    width: 280px;
+}
+
+/* flex Box for nav bar */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.myNav{
+    font-size: 1.3rem;
+    position: static;
+}
+/* change links to be black*/
+a{
+    color:black
+}
+
+a:active{
+    background-color: darkslateblue;
+}
+/* hover over links to turn color green */
+a:hover{
+    color: green;
+}
+
+/*Element Selectors*/
+h1{
+    text-decoration: underline;
+    font-size: 1cm;
+}
+
+h2{
+    border-style: double;
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: fit-content;
+    min-height: fit-content;
+    border-radius: 8px;
+    border-color: darkred;
+}
+
+h3{
+    color:cornflowerblue;
+    font-size:20px;
+}
+
+h4{
+    color:darkslategray;
+    font-size:.19in;
+}
+
+p{
+    display: inline;
+}
