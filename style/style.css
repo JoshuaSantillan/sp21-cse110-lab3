@@ -1,8 +1,15 @@
 /* change entire background to light grey */
 *{
-    background-color: rgb(220,220,220);
+    font-family: 'Raleway', sans-serif;
 }
-
+body{
+        background-color: white;
+}
+@media screen and (min-width:800px){
+    body{
+        background-color: rgb(220,220,220);
+    }
+}
 /*header allignment */
 header{
     text-align: center;
@@ -32,17 +39,49 @@ header{
     font-size: 1.3rem;
     position: static;
 }
+.myForm{
+    width: 500px;
+    margin: auto;
+    padding: 5px 50px 5px 60px;
+}
+
+/*Grid Starts */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding: 2px;
+    display: inline-flexbox;
+}
+
+.entry1{
+    grid-row-end: 1;
+    grid-row-end:2;
+}
+.entry2{
+     grid-row-start: 1;
+     grid-row-end: 2;
+}
+.entry3{
+    grid-row-start: 1;
+}
+
+/*Grid Ends*/
 /* change links to be black*/
 a{
     color:black
 }
-
+[id~="name"]:hover{
+    background-color:black;
+}
 a:active{
     background-color: darkslateblue;
 }
 /* hover over links to turn color green */
 a:hover{
     color: green;
+    text-shadow: black;
 }
 
 /*Element Selectors*/
@@ -75,9 +114,23 @@ h4{
     font-size:.19in;
 }
 
-p{
-    display: inline;
+h3, h4{
+    text-transform: uppercase;
 }
-body{
-    font-family: 'Raleway', sans-serif;
+div > section{
+    text-indent: 10px;
+    text-shadow:grey 1px 1px 5px;
+    
+}
+h3+ul {
+    text-decoration: line-through;
+}
+ h4 ~ ol {
+    font-style: italic;
+}
+a.myNav{
+    background-color: #d4e2eb;
+}
+p{
+    display: inline; 
 }
