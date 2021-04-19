@@ -136,7 +136,7 @@ div > section{
 h3+ul {
     text-decoration: line-through;
 }
- h4 ~ ol {
+h4 ~ ol {
     font-style: italic;
 }
 a.myNav{
